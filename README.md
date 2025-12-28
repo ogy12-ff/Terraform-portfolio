@@ -12,3 +12,6 @@ Serverless-Architecture
 
 VPC-Network
 →VPCにAZを2つ用意し、パブリックサブネットにEC2を配置。ALBで負荷分散。RDSをプライベートサブネットに配置し、Active-Standbyで運用
+
+CloudWatch-Alarm
+→EC2が落ちたときにSNSを使ってメールで通知(死活監視)
